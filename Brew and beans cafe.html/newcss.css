@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --primary-color: #7c6464;
     --secondary-color: #000;
@@ -5,6 +6,7 @@
     --transition-speed: 0.3s;
 }
 
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
@@ -84,7 +86,8 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.content{
+
+.content {
     color: white;
     text-align: center;
     margin-top: 3rem;
@@ -159,6 +162,8 @@ button:hover {
     opacity: 0.9;
     line-height: 1.6;
 }
+
+/* Footer */
 .footer {
     background-color: var(--primary-color);
     padding: 3rem 0;
@@ -215,11 +220,52 @@ button:hover {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .logo h3 {
         font-size: 1.5rem;
     }
-    nav ul {
-        gap: 1.5rem;
+
+    .nav-toggle {
+        display: block;
     }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-buttons button {
+        margin: 5px 0;
+    }
+}
+
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #333;
+}
+
+.dark-mode .feature-card {
+    background-color: #444;
 }
