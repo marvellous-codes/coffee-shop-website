@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     navToggle.textContent = "☰";
     navToggle.classList.add("nav-toggle");
-    navToggle.setAttribute("aria-label", "Toggle navigation menu");
     document.querySelector("nav").prepend(navToggle);
 
     navToggle.addEventListener("click", function () {
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.createElement("button");
     darkModeToggle.textContent = "🌙";
     darkModeToggle.classList.add("dark-mode-toggle");
-    darkModeToggle.setAttribute("aria-label", "Toggle dark mode");
     document.querySelector("nav").appendChild(darkModeToggle);
 
     darkModeToggle.addEventListener("click", function () {
