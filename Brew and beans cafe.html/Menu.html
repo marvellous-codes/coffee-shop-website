@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Brew & Beans Cafe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="newcss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<style>
+    .menu-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.menu-section h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.menu-category {
+    background: var(--background-light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 3rem 0;
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.footer-section ul li a:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+</style>
+<nav>
+    <div class="logo">
+        <h3>BREW & BEANS CAFE</h3>
+    </div>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Menu.html" class="active">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <button class="sign-in">Sign in</button>
+        <button class="sign-up">Sign up</button>
+    </div>
+</nav>
+<body>
+    <main class="menu-section">
+        <h1>Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-category">
+                <h2>Hot Coffee</h2>
+                <div class="menu-item">
+                    <img src="images/espresso.jpg" alt="Espresso" class="menu-image">
+                    <h3>Espresso</h3>
+                    <p>Single shot of our signature blend</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino" class="menu-image">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foam</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/latte.jpg" alt="Latte" class="menu-image">
+                    <h3>Cafe Latte</h3>
+                    <p>Espresso with steamed milk</p>
+                    <span class="price">$4.00</span>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h2>Cold Drinks</h2>
+                <div class="menu-item">
+                    <img src="images/iced-latte.jpg" alt="Iced Latte" class="menu-image">
+                    <h3>Iced Latte</h3>
+                    <p>Double shot espresso with cold milk</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cold-brew.jpg" alt="Cold Brew" class="menu-image">
+                    <h3>Cold Brew</h3>
+                    <p>24-hour steeped coffee served over ice</p>
+                    <span class="price">$5.00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/frappe.jpg" alt="Frappe" class="menu-image">
+                    <h3>Caramel Frappe</h3>
+                    <p>Blended coffee with caramel and whipped cream</p>
+                    <span class="price">$5.50</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Private Events</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Brew & Beans Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

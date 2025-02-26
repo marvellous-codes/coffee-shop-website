@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Brew & Beans Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+  /* About Page Styles */
+.about-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.6;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.about-card {
+    background-color: var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.about-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.team-section {
+    margin-top: 5rem;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--primary-color);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-intro {
+        font-size: 1.1rem;
+    }
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <h3>BREW & BEANS CAFE</h3>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign up</button>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h1>Our Story</h1>
+            <p class="about-intro">Founded in 2020, Brew & Beans has been serving premium coffee and creating memorable experiences for our community.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-mug-hot about-icon"></i>
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional coffee experiences while fostering a welcoming environment for all.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-heart about-icon"></i>
+                    <h3>Our Values</h3>
+                    <p>Quality, Community, Sustainability, and Innovation drive everything we do.</p>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/barista1.jpg" alt="Head Barista">
+                        <h3>John Doe</h3>
+                        <p>Head Barista</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/barista2.jpg" alt="Coffee Expert">
+                        <h3>Jane Smith</h3>
+                        <p>Coffee Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Private Events</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Brew & Beans Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
